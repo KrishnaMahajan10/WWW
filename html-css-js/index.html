@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <title>Q1</title>
+  </head>
+  <body>
+    <form action="submit" method="get">
+      <h1>Form Validation</h1>
+      <table>
+        <tbody>
+          <tr>
+            <th><label for="fname">First Name : </label></th>
+            <td><input type="text" id="fname" name="fname" /></td>
+            <td id="fnameerr" style="color: red"></td>
+          </tr>
+          <tr>
+            <th><label for="lname">Last Name : </label></th>
+            <td><input type="text" id="lname" name="lname" /></td>
+            <td id="lnameerr" style="color: red"></td>
+          </tr>
+          <tr>
+            <th><label for="age">Age : </label></th>
+            <td><input type="number" id="age" name="age" /></td>
+            <td id="ageerr" style="color: red"></td>
+          </tr>
+          <tr>
+            <th><label for="add">Address : </label></th>
+            <td>
+              <textarea name="add" id="add" cols="30" rows="3"></textarea>
+            </td>
+            <td id="adderr" style="color: red"></td>
+          </tr>
+          <tr>
+            <th>Gender :</th>
+            <td>
+              <input type="radio" id="male" name="gen" value="male" /><label
+                for="male"
+                >Male</label
+              >
+              <input type="radio" id="female" name="gen" value="female" /><label
+                for="female"
+                >Female</label
+              >
+              <input type="radio" id="other" name="gen" value="other" /><label
+                for="other"
+                >Other</label
+              >
+            </td>
+            <td id="generr" style="color: red"></td>
+          </tr>
+          <tr>
+            <th>Checkbox :</th>
+            <td>
+              <input
+                type="checkbox"
+                name="check"
+                id="book"
+                value="book"
+              /><label for="book">Book</label>
+              <input
+                type="checkbox"
+                name="check"
+                id="play"
+                value="play"
+              /><label for="play">Play</label>
+              <input
+                type="checkbox"
+                name="check"
+                id="sleep"
+                value="sleep"
+              /><label for="sleep">Sleep</label>
+            </td>
+            <td id="checkerr" style="color: red"></td>
+          </tr>
+          <tr>
+            <th><label for="eml">Email : </label></th>
+            <td><input type="text" id="eml" name="eml" /></td>
+            <td id="emlerr" style="color: red"></td>
+          </tr>
+          <tr>
+            <th><label for="pass">Password : </label></th>
+            <td><input type="text" id="pass" name="pass" /></td>
+            <td id="passerr" style="color: red"></td>
+          </tr>
+          <tr>
+            <th><label for="vpass">Verify Pass : </label></th>
+            <td><input type="text" id="vpass" name="vpass" /></td>
+            <td id="vpasserr" style="color: red"></td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>
+              <input
+                type="button"
+                value="Submit"
+                id="submit"
+                onclick="verify()"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

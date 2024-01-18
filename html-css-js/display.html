@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>display</h1>
+    <div id="disp"></div>
+    
+    <script>
+        console.log(localStorage.getItem('user'))
+        let display = document.getElementById("disp");
+        let user = JSON.parse(localStorage.getItem('user'));
+        display.innerHTML = `
+            <h1>Name = ${user[0]}</h1>
+            <h1>Email = ${user[1]}</h1>
+            <h1>Password = ${user[2]}</h1>
+        `;
+    </script>
+</body>
+</html>
